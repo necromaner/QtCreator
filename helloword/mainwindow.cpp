@@ -29,5 +29,5 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
-    ui->label->setText("hello");
+    ui->label_3->setText("点击按钮修改");
 }

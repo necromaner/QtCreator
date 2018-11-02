@@ -13,6 +13,5 @@ int main(int argc, char *argv[])
     buttonWindow.show();
     buttonWindow.resize(200,100);
 
-
     return a.exec();
 }

@@ -29,23 +29,23 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralWidget;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout;
     QLabel *label;
     QLabel *label_6;
-    QWidget *widget1;
+    QWidget *layoutWidget1;
     QHBoxLayout *horizontalLayout_2;
     QLabel *label_2;
     QComboBox *comboBox;
-    QWidget *widget2;
+    QWidget *layoutWidget2;
     QHBoxLayout *horizontalLayout_3;
     QLabel *label_3;
     QPushButton *pushButton;
-    QWidget *widget3;
+    QWidget *layoutWidget3;
     QHBoxLayout *horizontalLayout_4;
     QLabel *label_4;
     QLineEdit *lineEdit;
-    QWidget *widget4;
+    QWidget *layoutWidget4;
     QHBoxLayout *horizontalLayout_5;
     QLabel *label_5;
     QCheckBox *checkBox;
@@ -60,92 +60,92 @@ public:
         MainWindow->resize(400, 300);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
-        widget = new QWidget(centralWidget);
-        widget->setObjectName(QStringLiteral("widget"));
-        widget->setGeometry(QRect(1, 1, 251, 16));
-        horizontalLayout = new QHBoxLayout(widget);
+        layoutWidget = new QWidget(centralWidget);
+        layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
+        layoutWidget->setGeometry(QRect(1, 1, 251, 18));
+        horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setSpacing(6);
         horizontalLayout->setContentsMargins(11, 11, 11, 11);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        label = new QLabel(widget);
+        label = new QLabel(layoutWidget);
         label->setObjectName(QStringLiteral("label"));
 
         horizontalLayout->addWidget(label);
 
-        label_6 = new QLabel(widget);
+        label_6 = new QLabel(layoutWidget);
         label_6->setObjectName(QStringLiteral("label_6"));
 
         horizontalLayout->addWidget(label_6);
 
-        widget1 = new QWidget(centralWidget);
-        widget1->setObjectName(QStringLiteral("widget1"));
-        widget1->setGeometry(QRect(0, 20, 251, 31));
-        horizontalLayout_2 = new QHBoxLayout(widget1);
+        layoutWidget1 = new QWidget(centralWidget);
+        layoutWidget1->setObjectName(QStringLiteral("layoutWidget1"));
+        layoutWidget1->setGeometry(QRect(0, 20, 251, 32));
+        horizontalLayout_2 = new QHBoxLayout(layoutWidget1);
         horizontalLayout_2->setSpacing(6);
         horizontalLayout_2->setContentsMargins(11, 11, 11, 11);
         horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
         horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
-        label_2 = new QLabel(widget1);
+        label_2 = new QLabel(layoutWidget1);
         label_2->setObjectName(QStringLiteral("label_2"));
 
         horizontalLayout_2->addWidget(label_2);
 
-        comboBox = new QComboBox(widget1);
+        comboBox = new QComboBox(layoutWidget1);
         comboBox->setObjectName(QStringLiteral("comboBox"));
 
         horizontalLayout_2->addWidget(comboBox);
 
-        widget2 = new QWidget(centralWidget);
-        widget2->setObjectName(QStringLiteral("widget2"));
-        widget2->setGeometry(QRect(0, 50, 251, 31));
-        horizontalLayout_3 = new QHBoxLayout(widget2);
+        layoutWidget2 = new QWidget(centralWidget);
+        layoutWidget2->setObjectName(QStringLiteral("layoutWidget2"));
+        layoutWidget2->setGeometry(QRect(0, 50, 251, 35));
+        horizontalLayout_3 = new QHBoxLayout(layoutWidget2);
         horizontalLayout_3->setSpacing(6);
         horizontalLayout_3->setContentsMargins(11, 11, 11, 11);
         horizontalLayout_3->setObjectName(QStringLiteral("horizontalLayout_3"));
         horizontalLayout_3->setContentsMargins(0, 0, 0, 0);
-        label_3 = new QLabel(widget2);
+        label_3 = new QLabel(layoutWidget2);
         label_3->setObjectName(QStringLiteral("label_3"));
 
         horizontalLayout_3->addWidget(label_3);
 
-        pushButton = new QPushButton(widget2);
+        pushButton = new QPushButton(layoutWidget2);
         pushButton->setObjectName(QStringLiteral("pushButton"));
 
         horizontalLayout_3->addWidget(pushButton);
 
-        widget3 = new QWidget(centralWidget);
-        widget3->setObjectName(QStringLiteral("widget3"));
-        widget3->setGeometry(QRect(0, 90, 251, 21));
-        horizontalLayout_4 = new QHBoxLayout(widget3);
+        layoutWidget3 = new QWidget(centralWidget);
+        layoutWidget3->setObjectName(QStringLiteral("layoutWidget3"));
+        layoutWidget3->setGeometry(QRect(0, 90, 251, 23));
+        horizontalLayout_4 = new QHBoxLayout(layoutWidget3);
         horizontalLayout_4->setSpacing(6);
         horizontalLayout_4->setContentsMargins(11, 11, 11, 11);
         horizontalLayout_4->setObjectName(QStringLiteral("horizontalLayout_4"));
         horizontalLayout_4->setContentsMargins(0, 0, 0, 0);
-        label_4 = new QLabel(widget3);
+        label_4 = new QLabel(layoutWidget3);
         label_4->setObjectName(QStringLiteral("label_4"));
 
         horizontalLayout_4->addWidget(label_4);
 
-        lineEdit = new QLineEdit(widget3);
+        lineEdit = new QLineEdit(layoutWidget3);
         lineEdit->setObjectName(QStringLiteral("lineEdit"));
 
         horizontalLayout_4->addWidget(lineEdit);
 
-        widget4 = new QWidget(centralWidget);
-        widget4->setObjectName(QStringLiteral("widget4"));
-        widget4->setGeometry(QRect(0, 120, 251, 21));
-        horizontalLayout_5 = new QHBoxLayout(widget4);
+        layoutWidget4 = new QWidget(centralWidget);
+        layoutWidget4->setObjectName(QStringLiteral("layoutWidget4"));
+        layoutWidget4->setGeometry(QRect(0, 120, 251, 23));
+        horizontalLayout_5 = new QHBoxLayout(layoutWidget4);
         horizontalLayout_5->setSpacing(6);
         horizontalLayout_5->setContentsMargins(11, 11, 11, 11);
         horizontalLayout_5->setObjectName(QStringLiteral("horizontalLayout_5"));
         horizontalLayout_5->setContentsMargins(0, 0, 0, 0);
-        label_5 = new QLabel(widget4);
+        label_5 = new QLabel(layoutWidget4);
         label_5->setObjectName(QStringLiteral("label_5"));
 
         horizontalLayout_5->addWidget(label_5);
 
-        checkBox = new QCheckBox(widget4);
+        checkBox = new QCheckBox(layoutWidget4);
         checkBox->setObjectName(QStringLiteral("checkBox"));
 
         horizontalLayout_5->addWidget(checkBox);
@@ -174,7 +174,7 @@ public:
         label_6->setText(QApplication::translate("MainWindow", "TextLabel", nullptr));
         label_2->setText(QApplication::translate("MainWindow", "2.QComboBox", nullptr));
         label_3->setText(QApplication::translate("MainWindow", "3.QPushButton", nullptr));
-        pushButton->setText(QApplication::translate("MainWindow", "PushButton", nullptr));
+        pushButton->setText(QApplication::translate("MainWindow", "\346\214\211\351\222\256", nullptr));
         label_4->setText(QApplication::translate("MainWindow", "4.QLineEdit", nullptr));
         label_5->setText(QApplication::translate("MainWindow", "5.QCheckBox", nullptr));
         checkBox->setText(QApplication::translate("MainWindow", "CheckBox", nullptr));
