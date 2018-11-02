@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.12)
+project(test)
+set (CMAKE_PREFIX_PATH "/usr/local/Cellar/qt/5.10.1/lib/cmake")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+set(SOURCE_FILES CTerminal.cpp CatalogTree.cpp)
+find_package(Qt5Widgets REQUIRED)
+add_executable(test main.cpp)
+target_link_libraries(CatalogTree Qt5::Widgets)
