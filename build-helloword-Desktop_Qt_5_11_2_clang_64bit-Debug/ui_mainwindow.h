@@ -18,7 +18,9 @@
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
+#include <QtWidgets/QProgressBar>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QSlider>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QToolBar>
 #include <QtWidgets/QWidget>
@@ -49,6 +51,15 @@ public:
     QHBoxLayout *horizontalLayout_5;
     QLabel *label_5;
     QCheckBox *checkBox;
+    QLineEdit *lineEdit_2;
+    QWidget *layoutWidget5;
+    QHBoxLayout *horizontalLayout_6;
+    QSlider *horizontalSlider;
+    QLabel *label_7;
+    QWidget *layoutWidget6;
+    QHBoxLayout *horizontalLayout_7;
+    QProgressBar *progressBar;
+    QPushButton *pushButton_2;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -57,7 +68,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(400, 300);
+        MainWindow->resize(582, 407);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         layoutWidget = new QWidget(centralWidget);
@@ -150,10 +161,55 @@ public:
 
         horizontalLayout_5->addWidget(checkBox);
 
+        lineEdit_2 = new QLineEdit(centralWidget);
+        lineEdit_2->setObjectName(QStringLiteral("lineEdit_2"));
+        lineEdit_2->setGeometry(QRect(0, 170, 251, 21));
+        layoutWidget5 = new QWidget(centralWidget);
+        layoutWidget5->setObjectName(QStringLiteral("layoutWidget5"));
+        layoutWidget5->setGeometry(QRect(0, 140, 251, 31));
+        horizontalLayout_6 = new QHBoxLayout(layoutWidget5);
+        horizontalLayout_6->setSpacing(6);
+        horizontalLayout_6->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_6->setObjectName(QStringLiteral("horizontalLayout_6"));
+        horizontalLayout_6->setContentsMargins(0, 0, 0, 0);
+        horizontalSlider = new QSlider(layoutWidget5);
+        horizontalSlider->setObjectName(QStringLiteral("horizontalSlider"));
+        horizontalSlider->setEnabled(true);
+        horizontalSlider->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_6->addWidget(horizontalSlider);
+
+        label_7 = new QLabel(layoutWidget5);
+        label_7->setObjectName(QStringLiteral("label_7"));
+
+        horizontalLayout_6->addWidget(label_7);
+
+        layoutWidget6 = new QWidget(centralWidget);
+        layoutWidget6->setObjectName(QStringLiteral("layoutWidget6"));
+        layoutWidget6->setGeometry(QRect(0, 190, 251, 35));
+        horizontalLayout_7 = new QHBoxLayout(layoutWidget6);
+        horizontalLayout_7->setSpacing(6);
+        horizontalLayout_7->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_7->setObjectName(QStringLiteral("horizontalLayout_7"));
+        horizontalLayout_7->setContentsMargins(0, 0, 0, 0);
+        progressBar = new QProgressBar(layoutWidget6);
+        progressBar->setObjectName(QStringLiteral("progressBar"));
+        progressBar->setCursor(QCursor(Qt::WaitCursor));
+        progressBar->setValue(24);
+
+        horizontalLayout_7->addWidget(progressBar);
+
+        pushButton_2 = new QPushButton(layoutWidget6);
+        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
+        pushButton_2->setCheckable(true);
+        pushButton_2->setChecked(false);
+
+        horizontalLayout_7->addWidget(pushButton_2);
+
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 400, 22));
+        menuBar->setGeometry(QRect(0, 0, 582, 22));
         MainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -163,6 +219,7 @@ public:
         MainWindow->setStatusBar(statusBar);
 
         retranslateUi(MainWindow);
+        QObject::connect(pushButton_2, SIGNAL(clicked(bool)), progressBar, SLOT(setVisible(bool)));
 
         QMetaObject::connectSlotsByName(MainWindow);
     } // setupUi
@@ -178,6 +235,8 @@ public:
         label_4->setText(QApplication::translate("MainWindow", "4.QLineEdit", nullptr));
         label_5->setText(QApplication::translate("MainWindow", "5.QCheckBox", nullptr));
         checkBox->setText(QApplication::translate("MainWindow", "CheckBox", nullptr));
+        label_7->setText(QApplication::translate("MainWindow", "TextLabel", nullptr));
+        pushButton_2->setText(QApplication::translate("MainWindow", "\351\232\220\350\227\217", nullptr));
     } // retranslateUi
 
 };
