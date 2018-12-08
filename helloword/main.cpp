@@ -3,6 +3,10 @@
 #include <QPushButton>
 int main(int argc, char *argv[])
 {
+    char CmdBuf[16]={0x55,0x55,'&','A','G','L',0x0D,0x00,0x01,0x00,0x01,0x01,'\n',0x55,0x55};
+
+    printf("%s\n",CmdBuf);
+
 
     char dat[50];
     QString ite_lise = "abcedf";
